@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
+    public static Level currentLevel = Level.Level1;
+
     public GameObject sectorPrefab;
+    public GameObject finishPrefab;
+    public Transform wallTransform;
     public Vector3 origin;
 
     static Transform lastSpawnedSegment;
     static int currentHeightIndex;
 
-    private void OnEnable()
+    void Start()
     {
-        CreatePlatforms(LevelManager.Instance.LoadLevel(LevelName.Level1).platforms);
+        currentHeightIndex = 0;
+        lastSpawnedSegment = null;
+        UIManager.Instance.UpdateLevelText(currentLevel.ToString());
+        CreatePlatforms(LevelManager.Instance.LoadLevel(currentLevel));
     }
 
     void CreatePlatform(PlatformInfo info)
@@ -27,9 +34,11 @@ public class PlatformManager : MonoBehaviour
         currentHeightIndex++;
     }
 
-    public void CreatePlatforms(PlatformInfo[] platforms)
+    public void CreatePlatforms(LevelInfo level)
     {
-        foreach (PlatformInfo info in platforms) CreatePlatform(info);
+        foreach (PlatformInfo info in level.platforms) CreatePlatform(info);
+        Instantiate(finishPrefab, origin + Vector3.up * level.platformCount * Constants.PLATFORM_HEIGHT, Quaternion.identity);
+        wallTransform.localScale = new Vector3(1, level.platformCount * Constants.PLATFORM_HEIGHT, 1);
     }
 }
 

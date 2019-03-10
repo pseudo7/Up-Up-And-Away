@@ -18,16 +18,18 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        jumpsLeft = 2;
+        if (other.CompareTag("Replenish")) jumpsLeft = 2;
+        else if (other.CompareTag("Finish")) LevelManager.Instance.LoadNextLevel();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) Jump();
+        if (Input.GetMouseButtonDown(0)) Jump();
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     void Jump()
     {
-        if (jumpsLeft-- > 0) playerRB.velocity = Vector3.up * jumpSpeed;
+        if (jumpsLeft-- > 0) playerRB.velocity = Vector3.up * (jumpsLeft == 0 ? jumpSpeed : jumpSpeed * .75f);
     }
 }

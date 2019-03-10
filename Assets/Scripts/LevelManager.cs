@@ -1,27 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
 
-    Dictionary<LevelName, LevelInfo> levelMap;
+    Dictionary<Level, LevelInfo> levelMap;
 
     void Awake()
     {
         if (!Instance)
         {
             Instance = this;
-            levelMap = new Dictionary<LevelName, LevelInfo>
+            levelMap = new Dictionary<Level, LevelInfo>
             {
-                { LevelName.Level1, new LevelInfo(10, GetPlatformInfo(false, 10, 6, 18, 100, 250 )) },
-                { LevelName.Level2, new LevelInfo(10, GetPlatformInfo(true, 10, 4, 12, 100, 250 )) },
+                { Level.Level1, new LevelInfo(10, GetPlatformInfo(false, 10, 8, 18, 100, 200 )) },
+                { Level.Level2, new LevelInfo(15, GetPlatformInfo(false, 15, 6, 15, 100, 225 )) },
+                { Level.Level3, new LevelInfo(20, GetPlatformInfo(false, 20, 4, 12, 100, 250 )) }
             };
         }
     }
 
-    public LevelInfo LoadLevel(LevelName levelName)
+    public LevelInfo LoadLevel(Level levelName)
     {
         return levelMap[levelName];
     }
@@ -34,9 +36,20 @@ public class LevelManager : MonoBehaviour
         float rotationStep = (upperRotationSpeed - lowerRotationSpeed) / platformCount;
 
         for (int i = 0; i < platformCount; i++)
-            platforms[i] = new PlatformInfo(evenlyDistribute, (int)(upperSegmentCount - segmentCountStep), lowerRotationSpeed + rotationStep);
+            platforms[i] = new PlatformInfo(evenlyDistribute, upperSegmentCount - (int)(i * segmentCountStep), lowerRotationSpeed + i * rotationStep);
 
         return platforms;
+    }
+
+    public void LoadNextLevel()
+    {
+        PlatformManager.currentLevel++;
+        RestartLevel();
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 
@@ -52,7 +65,7 @@ public struct LevelInfo
     }
 }
 
-public enum LevelName
+public enum Level
 {
     Level1, Level2, Level3
 }
