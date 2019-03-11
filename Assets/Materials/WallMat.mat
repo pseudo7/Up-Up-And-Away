@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WallMat
-  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -43,9 +43,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 28dc50f28d3f9fd4b8417038667c51ed, type: 3}
-        m_Scale: {x: 5, y: 50}
-        m_Offset: {x: 0, y: 18.823841}
+        m_Texture: {fileID: 2800000, guid: 18847146d4b87e2428f733686cc0f2e0, type: 3}
+        m_Scale: {x: 5, y: 25}
+        m_Offset: {x: 0, y: 20.41798}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
