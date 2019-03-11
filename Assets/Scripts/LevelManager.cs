@@ -79,7 +79,7 @@ public class LevelManager : MonoBehaviour
 
         for (int i = 0; i < platformCount; i++)
             platforms[i] = new PlatformInfo(evenlyDistribute, upperSegmentCount - (int)(i * segmentCountStep),
-                (lowerRotationSpeed + i * rotationStep) * (mixRotation && i % 2 == 0 ? 1 : -1));
+                (lowerRotationSpeed + i * rotationStep) * (mixRotation && i % 2 == 0 ? -1 : 1));
 
         return platforms;
     }
