@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
-    public static Level currentLevel = Level.Level3;
+    public static Level currentLevel = Level.Level1;
 
     public GameObject sectorPrefab;
     public GameObject finishPrefab;
@@ -21,7 +21,8 @@ public class PlatformManager : MonoBehaviour
         currentHeightIndex = 0;
         lastSpawnedSegment = null;
         UIManager.Instance.UpdateLevelText(currentLevel);
-        CreatePlatforms(LevelManager.Instance.LoadLevel(currentLevel));
+        CreatePlatforms(LevelManager.Instance.GetLevelInfo(currentLevel));
+        PlayerPrefManager.IsLevelUnlocked = (int)currentLevel;
     }
 
     void CreatePlatform(PlatformInfo info)

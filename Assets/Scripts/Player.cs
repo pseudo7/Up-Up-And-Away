@@ -25,7 +25,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) Jump();
-        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     void Jump()

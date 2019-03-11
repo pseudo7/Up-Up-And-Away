@@ -6,4 +6,5 @@
     public const string PLAYER_TAG = "Player";
     public const string REPLENISH_TAG = "Replenish";
     public const string FINISH_TAG = "Finish";
+    public const string LEVEL_UNLOCK_KEY = "LEVEL_UNLOCK_KEY";
 }
