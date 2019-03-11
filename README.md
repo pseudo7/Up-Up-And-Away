@@ -2,7 +2,7 @@
 ## Level Based Strategic 3D-Platformer Game
 
 <p align="center">
-<img src="/Screenshots/11-min.png" width="40%" height="40%"> &nbsp 
+<img src="/Screenshots/12-min.png" width="40%" height="40%"> &nbsp 
 <img src="/Screenshots/02-min.png" width="40%" height="40%">
 </p>
 
@@ -15,7 +15,7 @@
 
 ## Screenshots
 <p align="center">
-<img src="/Screenshots/12-min.png" width="40%" height="40%"> &nbsp 
+<img src="/Screenshots/11-min.png" width="40%" height="40%"> &nbsp 
 <img src="/Screenshots/01-min.png" width="40%" height="40%">
 <img src="/Screenshots/04-min.png" width="40%" height="40%">
 <img src="/Screenshots/03-min.png" width="40%" height="40%">
