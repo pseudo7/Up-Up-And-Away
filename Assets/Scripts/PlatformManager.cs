@@ -37,7 +37,7 @@ public class PlatformManager : MonoBehaviour
         currentHeightIndex++;
     }
 
-    private void LateUpdate()
+    void LateUpdate()
     {
         wallMat.mainTextureOffset = new Vector2(0, Time.time);
     }
@@ -49,6 +49,7 @@ public class PlatformManager : MonoBehaviour
         wallTransform.localScale = new Vector3(1, level.platformCount * Constants.PLATFORM_HEIGHT, 1);
         pillarTransform.localScale = new Vector3(1, level.platformCount * Constants.PLATFORM_HEIGHT / 2, 1);
         wallMat.mainTextureScale = new Vector2(5, level.platformCount * Constants.PLATFORM_HEIGHT / 2);
+        PlatformCamera.allowRotation = level.allowCameraRotation;
     }
 
 #if UNITY_EDITOR
