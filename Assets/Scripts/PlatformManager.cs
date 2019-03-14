@@ -42,7 +42,7 @@ public class PlatformManager : MonoBehaviour
         wallMat.mainTextureOffset = new Vector2(0, Time.time);
     }
 
-    private void OnApplicationQuit()
+    void OnDestroy()
     {
         wallMat.mainTextureOffset = Vector2.zero;
     }

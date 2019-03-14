@@ -23,7 +23,6 @@ public class SettingsManager : MonoBehaviour
     public void SetQualitySettings(int qualityLevel)
     {
         PlayerPrefManager.Quality = qualityLevel;
-        ToggleQualityPanel();
     }
 
     public void ToggleQualityPanel()

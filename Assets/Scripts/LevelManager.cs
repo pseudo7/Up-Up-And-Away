@@ -40,7 +40,13 @@ public class LevelManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (SceneManager.GetActiveScene().buildIndex == 1) SceneManager.LoadScene(0);
-            else if (SceneManager.GetActiveScene().buildIndex == 0) Application.Quit();
+            else if (SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                SettingsManager settingsManager = FindObjectOfType<SettingsManager>();
+                if (settingsManager && settingsManager.settingsPanel.activeInHierarchy)
+                    settingsManager.settingsPanel.SetActive(false);
+                else { Debug.Log("QUIT"); Application.Quit(); }
+            }
         }
     }
 

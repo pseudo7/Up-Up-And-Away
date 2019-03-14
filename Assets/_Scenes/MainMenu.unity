@@ -2196,30 +2196,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297823, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297823, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297823, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: m_IsOn
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
@@ -2228,33 +2208,23 @@ PrefabInstance:
       objectReference: {fileID: 1990684841}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1036719852}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetQualitySettings
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1036719848}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819932138518697565, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
-        type: 3}
-      propertyPath: m_Text
-      value: Low Quality
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6975e6faa2c3f4d9083cc3a459a89c, type: 3}
@@ -3048,6 +3018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
         type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 1990684841}
@@ -3056,5 +3031,45 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1036719852}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1036719848}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932137474297820, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819932138518697565, guid: ee6975e6faa2c3f4d9083cc3a459a89c,
+        type: 3}
+      propertyPath: m_Text
+      value: High Quality
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6975e6faa2c3f4d9083cc3a459a89c, type: 3}
