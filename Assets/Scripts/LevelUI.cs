@@ -10,7 +10,7 @@ public class LevelUI : MonoBehaviour
     void Awake()
     {
         index = transform.GetSiblingIndex();
-        transform.GetChild(2).GetChild(0).GetComponent<Text>().text = string.Format("Level {0}", index + 1);
+        transform.GetChild(2).GetChild(0).GetComponent<Text>().text = string.Format("Level {0}", (index + 1).ToString("0#"));
     }
 
     public void UpdateLevelAndLoad()

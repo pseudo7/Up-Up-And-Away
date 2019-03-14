@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateLevelText(Level levelName)
     {
-        levelText.text = string.Format("Level {0}", (int)(levelName + 1));
+        levelText.text = string.Format("Level {0}", ((int)(levelName + 1)).ToString("0#"));
     }
 
     void UpdateLevelTime()
