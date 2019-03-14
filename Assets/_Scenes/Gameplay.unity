@@ -345,6 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSpeed: 10
+  ballMatHigh: {fileID: 2100000, guid: 103f5e7d05d706048a0a9ca2ead45313, type: 2}
+  ballMatLow: {fileID: 2100000, guid: c5c922757ea40f74aa0a2a54e5258ffd, type: 2}
 --- !u!1 &375498010
 GameObject:
   m_ObjectHideFlags: 0

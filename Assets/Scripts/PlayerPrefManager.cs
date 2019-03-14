@@ -24,6 +24,24 @@ public class PlayerPrefManager
         }
     }
 
+    public static int Quality
+    {
+        get
+        {
+            if (!PlayerPrefs.HasKey(Constants.QUALITY_KEY))
+            {
+                PlayerPrefs.SetInt(Constants.QUALITY_KEY, 1);
+                PlayerPrefs.Save();
+            }
+            return PlayerPrefs.GetInt(Constants.QUALITY_KEY);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(Constants.QUALITY_KEY, value);
+            PlayerPrefs.Save();
+        }
+    }
+
     public static float GetLevelTime(int level)
     {
         if (!PlayerPrefs.HasKey(Constants.LEVEL_TIME_KEY))

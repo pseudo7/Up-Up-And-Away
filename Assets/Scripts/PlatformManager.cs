@@ -42,6 +42,11 @@ public class PlatformManager : MonoBehaviour
         wallMat.mainTextureOffset = new Vector2(0, Time.time);
     }
 
+    private void OnApplicationQuit()
+    {
+        wallMat.mainTextureOffset = Vector2.zero;
+    }
+
     public void CreatePlatforms(LevelInfo level)
     {
         foreach (PlatformInfo info in level.platforms) CreatePlatform(info);
