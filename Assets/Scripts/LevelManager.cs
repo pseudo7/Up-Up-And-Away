@@ -19,11 +19,17 @@ public class LevelManager : MonoBehaviour
             levelMap = new Dictionary<Level, LevelInfo>
             {
                 { Level.Level1, new LevelInfo(10, false, GetPlatformInfo(false, false, 10, 8, 18, 100, 200 )) },
-                { Level.Level2, new LevelInfo(10, true, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
-                { Level.Level3, new LevelInfo(15, false, GetPlatformInfo(false, false, 15, 6, 15, 100, 225 )) },
-                { Level.Level4, new LevelInfo(15, true, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
-                { Level.Level5, new LevelInfo(20, false, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
-                { Level.Level6, new LevelInfo(20, true, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
+                { Level.Level2, new LevelInfo(10, false, GetPlatformInfo(false, true, 10, 8, 18, 125, 200 )) },
+                { Level.Level3, new LevelInfo(10, true, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
+                { Level.Level4, new LevelInfo(15, false, GetPlatformInfo(false, false, 15, 6, 15, 100, 225 )) },
+                { Level.Level5, new LevelInfo(15, false, GetPlatformInfo(false, true, 15, 6, 15, 125, 225 )) },
+                { Level.Level6, new LevelInfo(15, true, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
+                { Level.Level7, new LevelInfo(20, false, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
+                { Level.Level8, new LevelInfo(20, false, GetPlatformInfo(false, true, 20, 4, 12, 125, 250 )) },
+                { Level.Level9, new LevelInfo(20, true, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
+                { Level.Level10, new LevelInfo(25, false, GetPlatformInfo(false, false, 20, 4, 12, 125, 250 )) },
+                { Level.Level11, new LevelInfo(25, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level12, new LevelInfo(25, true, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
             };
         }
         else Destroy(gameObject);
@@ -105,5 +111,5 @@ public struct LevelInfo
 
 public enum Level
 {
-    Level1, Level2, Level3, Level4, Level5, Level6
+    Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11, Level12
 }
