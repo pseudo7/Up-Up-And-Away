@@ -18,18 +18,47 @@ public class LevelManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             levelMap = new Dictionary<Level, LevelInfo>
             {
-                { Level.Level1, new LevelInfo(10, false, GetPlatformInfo(false, false, 10, 8, 18, 100, 200 )) },
-                { Level.Level2, new LevelInfo(10, false, GetPlatformInfo(false, true, 10, 8, 18, 125, 200 )) },
-                { Level.Level3, new LevelInfo(10, true, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
-                { Level.Level4, new LevelInfo(15, false, GetPlatformInfo(false, false, 15, 6, 15, 100, 225 )) },
-                { Level.Level5, new LevelInfo(15, false, GetPlatformInfo(false, true, 15, 6, 15, 125, 225 )) },
-                { Level.Level6, new LevelInfo(15, true, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
-                { Level.Level7, new LevelInfo(20, false, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
-                { Level.Level8, new LevelInfo(20, false, GetPlatformInfo(false, true, 20, 4, 12, 125, 250 )) },
-                { Level.Level9, new LevelInfo(20, true, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
-                { Level.Level10, new LevelInfo(25, false, GetPlatformInfo(false, false, 20, 4, 12, 125, 250 )) },
-                { Level.Level11, new LevelInfo(25, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
-                { Level.Level12, new LevelInfo(25, true, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level01, new LevelInfo(10, false, false, GetPlatformInfo(false, false, 10, 8, 18, 100, 200 )) },
+                { Level.Level02, new LevelInfo(10, false, false, GetPlatformInfo(false, true, 10, 8, 18, 125, 200 )) },
+                { Level.Level03, new LevelInfo(10, true, false, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
+                { Level.Level04, new LevelInfo(10, false, true, GetPlatformInfo(false, false, 10, 8, 18, 100, 200 )) },
+
+                { Level.Level05, new LevelInfo(15, false, false, GetPlatformInfo(false, false, 15, 6, 15, 100, 225 )) },
+                { Level.Level06, new LevelInfo(15, false, false, GetPlatformInfo(false, true, 15, 6, 15, 125, 225 )) },
+                { Level.Level07, new LevelInfo(15, true, false, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
+                { Level.Level08, new LevelInfo(15, false, true, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
+
+                { Level.Level09, new LevelInfo(20, false, false, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
+                { Level.Level10, new LevelInfo(20, false, false, GetPlatformInfo(false, true, 20, 4, 12, 125, 250 )) },
+                { Level.Level11, new LevelInfo(20, true, false, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
+                { Level.Level12, new LevelInfo(20, false, true, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
+
+                { Level.Level13, new LevelInfo(25, false, false, GetPlatformInfo(false, false, 20, 4, 12, 125, 250 )) },
+                { Level.Level14, new LevelInfo(25, false, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level15, new LevelInfo(25, true, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level16, new LevelInfo(25, false, true, GetPlatformInfo(false, false, 20, 4, 12, 150, 250 )) },
+
+
+
+                { Level.Level17, new LevelInfo(10, false, false, GetPlatformInfo(false, false, 10, 8, 18, 100, 200 )) },
+                { Level.Level18, new LevelInfo(10, false, false, GetPlatformInfo(false, true, 10, 8, 18, 125, 200 )) },
+                { Level.Level19, new LevelInfo(10, true, false, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
+                { Level.Level20, new LevelInfo(10, true, false, GetPlatformInfo(false, true, 10, 8, 18, 100, 200 )) },
+
+                { Level.Level21, new LevelInfo(15, false, false, GetPlatformInfo(false, false, 15, 6, 15, 100, 225 )) },
+                { Level.Level22, new LevelInfo(15, false, false, GetPlatformInfo(false, true, 15, 6, 15, 125, 225 )) },
+                { Level.Level23, new LevelInfo(15, true, false, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
+                { Level.Level24, new LevelInfo(15, true, false, GetPlatformInfo(false, true, 15, 6, 15, 100, 225 )) },
+
+                { Level.Level25, new LevelInfo(20, false, false, GetPlatformInfo(false, false, 20, 4, 12, 100, 250 )) },
+                { Level.Level26, new LevelInfo(20, false, false, GetPlatformInfo(false, true, 20, 4, 12, 125, 250 )) },
+                { Level.Level27, new LevelInfo(20, true, false, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
+                { Level.Level28, new LevelInfo(20, true, false, GetPlatformInfo(false, true, 20, 4, 12, 100, 250 )) },
+
+                { Level.Level29, new LevelInfo(25, false, false, GetPlatformInfo(false, false, 20, 4, 12, 125, 250 )) },
+                { Level.Level30, new LevelInfo(25, false, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level31, new LevelInfo(25, true, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
+                { Level.Level32, new LevelInfo(25, true, false, GetPlatformInfo(false, true, 20, 4, 12, 150, 250 )) },
             };
         }
         else Destroy(gameObject);
@@ -105,17 +134,21 @@ public struct LevelInfo
 {
     public int platformCount;
     public bool allowCameraRotation;
+    public bool allowCameraRevolution;
     public PlatformInfo[] platforms;
 
-    public LevelInfo(int platformCount, bool allowCameraRotation, PlatformInfo[] platforms)
+    public LevelInfo(int platformCount, bool allowCameraRotation, bool allowCameraRevolution, PlatformInfo[] platforms)
     {
         this.platformCount = platformCount;
         this.allowCameraRotation = allowCameraRotation;
+        this.allowCameraRevolution = allowCameraRevolution;
         this.platforms = platforms;
     }
 }
 
 public enum Level
 {
-    Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11, Level12
+    Level01, Level02, Level03, Level04, Level05, Level06, Level07, Level08, Level09, Level10, Level11, Level12,
+    Level13, Level14, Level15, Level16, Level17, Level18, Level19, Level20, Level21, Level22, Level23, Level24,
+    Level25, Level26, Level27, Level28, Level29, Level30, Level31, Level32, Level33, Level34, Level35, Level36
 }

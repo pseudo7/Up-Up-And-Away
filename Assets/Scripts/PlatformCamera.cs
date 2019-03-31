@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlatformCamera : MonoBehaviour
 {
     public static bool allowRotation;
+    public static bool allowRevolution = true;
 
     public Vector3 offset = new Vector3(0, 5, -15);
 
@@ -15,17 +16,26 @@ public class PlatformCamera : MonoBehaviour
     void Awake()
     {
         playerTransform = FindObjectOfType<Player>().transform;
-        mainCam = GetComponent<Camera>();
+        mainCam = Camera.main;
     }
 
     void LateUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, offset + Vector3.up * playerTransform.position.y, .05f);
 
         if (allowRotation)
         {
             transform.rotation = Quaternion.Euler(0, 0, transform.position.y * Constants.PLATFORM_HEIGHT);
             mainCam.fieldOfView = 60 + Mathf.Abs(Mathf.Sin(transform.localEulerAngles.z * Mathf.Deg2Rad)) * 25;
+            transform.position = Vector3.Lerp(transform.position, offset + Vector3.up * playerTransform.position.y, .05f);
+        }
+        else if (allowRevolution)
+        {
+            transform.parent.rotation = Quaternion.Euler(0, transform.position.y * Constants.PLATFORM_HEIGHT * 3, 0);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, offset + Vector3.up * playerTransform.position.y, .05f);
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, offset + Vector3.up * playerTransform.position.y, .05f);
         }
     }
 }

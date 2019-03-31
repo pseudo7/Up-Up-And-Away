@@ -21,12 +21,14 @@ public class Player : MonoBehaviour
             GetComponent<MeshRenderer>().material = ballMatLow;
             transform.GetChild(0).gameObject.SetActive(false);
             transform.GetChild(1).gameObject.SetActive(false);
+            Camera.main.allowMSAA = false;
         }
         else
         {
             GetComponent<MeshRenderer>().material = ballMatHigh;
             transform.GetChild(0).gameObject.SetActive(true);
             transform.GetChild(1).gameObject.SetActive(true);
+            Camera.main.allowMSAA = true;
         }
         playerRB = GetComponent<Rigidbody>();
     }
