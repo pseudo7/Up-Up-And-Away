@@ -2,8 +2,10 @@
 ## Level Based Strategic 3D-Platformer Game
 
 <p align="center">
-<img src="/Screenshots/12-min.png" width="40%" height="40%"> &nbsp 
-<img src="/Screenshots/02-min.png" width="40%" height="40%">
+<img src="/Screenshots/18-min.png" width="40%" height="40%"> &nbsp 
+<img src="GIFs/01.gif" width="40%" height="40%">
+<img src="GIFs/02.gif" width="40%" height="40%"> &nbsp 
+<img src="GIFs/03.gif" width="40%" height="40%">
 </p>
 
 ## The Asset contains the following:
@@ -15,7 +17,7 @@
 
 ## Screenshots
 <p align="center">
-<img src="/Screenshots/11-min.png" width="40%" height="40%"> &nbsp 
+<img src="/Screenshots/19-min.png" width="40%" height="40%"> &nbsp 
 <img src="/Screenshots/01-min.png" width="40%" height="40%">
 <img src="/Screenshots/04-min.png" width="40%" height="40%">
 <img src="/Screenshots/03-min.png" width="40%" height="40%">
